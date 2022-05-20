@@ -254,6 +254,10 @@ input:focus {
     align-items: center;
 }
 
+.price-and-rating h1 {
+    color: var(--golder-color);
+}
+
 .cant-find {
     text-align: center;
     width: 100%;
