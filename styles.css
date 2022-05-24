@@ -28,6 +28,7 @@ body {
 .description-text {
     font-size: 10px;
     font-weight: 400;
+    margin-bottom: 30px;
     color: var(--secondary-color);
 }
 
@@ -102,7 +103,7 @@ header {
 .slider-1 {
     margin-top: 45px;
     width: 100%;
-    height: 150px;
+    height: auto;
     margin-inline: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -111,17 +112,6 @@ header {
 .slider-1 img {
     border-radius: 10px;
     width: 100%;
-}
-
-.search-bar {
-    background-color: white;
-    height: 45px;
-    padding-inline: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    margin-block: 30px;
 }
 
 input {
@@ -166,6 +156,10 @@ input:focus {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 50px;
 }
 
 .line-3 {
@@ -199,6 +193,7 @@ input:focus {
     flex-direction: column;
     position: fixed;
     background-color: whitesmoke;
+    color: #4a4a4a;
     padding: 30px;
     top: 0;
     right: 0;
@@ -231,7 +226,7 @@ input:focus {
 .all-cards {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -242,7 +237,13 @@ input:focus {
     margin-bottom: 10px;
 }
 
-.card-container img {
+.card-image-container {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.card-image-container img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
@@ -270,22 +271,10 @@ input:focus {
     margin-block: 15px;
 }
 
-.map-container {
-    height: 380px;
-    border-radius: 10px;
-    margin-bottom: 45px;
-}
-
-.map-container img {
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-}
-
 .slider-2 {
     margin-top: 45px;
     width: 100%;
-    height: 200px;
+    height: auto;
     margin-inline: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -294,6 +283,7 @@ input:focus {
 .slider-2 img {
     border-radius: 10px;
     width: 100%;
+    height: 100%;
 }
 
 .all-cards-2 {
@@ -328,14 +318,10 @@ input:focus {
     border-radius: 15px;
 }
 
-.price-and-rating {
+.title-and-rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.price-and-rating h1 {
-    color: var(--golder-color);
 }
 
 .cant-find {
@@ -366,7 +352,7 @@ input:focus {
         height: 64px;
     }
     .slider-1 {
-        height: 300px;
+        height: auto;
         margin-block: 45px;
     }
     .search-bar {
@@ -394,7 +380,7 @@ input:focus {
         flex-direction: row;
     }
     .slider-2 {
-        height: 300px;
+        height: auto;
     }
     .all-cards-2 {
         grid-template-columns: 1fr 1fr;
