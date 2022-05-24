@@ -408,6 +408,12 @@ input:focus {
     } */
 }
 
+@media screen and (max-width: 400px) {
+    .all-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (min-width: 1300px) {
     .all-cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
