@@ -411,6 +411,9 @@ input:focus {
     .all-cards {
         grid-template-columns: 1fr;
     }
+    .card-2-text-container {
+        padding-block: 0px;
+    }
 }
 
 @media screen and (min-width: 1300px) {
